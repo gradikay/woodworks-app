@@ -30,7 +30,7 @@ function App() {
               platformLink="https://opensea.io/collection/digital-woodworks"
               description="a collection of cryptoEmojis designed by shifting 13 types of hues, 
                            colors, and contrast with a supply of 1,000 NFTs."
-              supply="1,000 NFTs to be minted"
+              supply="1,000 NFTs to be minted."
               price="0.01 ETH"
               imageA={image2}
               imageB={image1}
@@ -43,7 +43,7 @@ function App() {
               platformLink="https://crypto.com/nft/collection/318ab765d9af6dfedd83fa5affa1d60a"
               description="a collection of green cryptoEmojis (only available on crypto.com NFT) designed by shifting 13 types of hues, 
                            colors, and contrast with a supply of 1,000 NFTs."
-              supply="1,000 NFTs to be minted"
+              supply="1,000 NFTs to be minted."
               price="$14"
               imageA={image6}
               imageB={image8}
@@ -222,7 +222,7 @@ function Collection(props) {
                             </div>
                             <div id="collapseOne" className="collapse" data-parent="#accordion">
                                 <div className="card-body">
-                                    <p> <strong> {name} </strong> has a maximum supply of { supply } NFTs. </p>
+                                    <p> <strong> {name} </strong> has a maximum supply of { supply } </p>
                                 </div>
                             </div>
                         </div>
