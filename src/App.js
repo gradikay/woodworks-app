@@ -7,6 +7,8 @@ import image5 from './image5.webp';
 import image6 from './image6.webp';
 import image7 from './image7.webp';
 import image8 from './image8.webp';
+import image9 from './image9.webp';
+import image10 from './image10.webp';
 
 // Main Application
 function App() {
@@ -24,7 +26,7 @@ function App() {
           <LowerNav />
 
           {/* Collection Component */}
-          <Collection
+          <CollectionA
               name="Digital Woodworks"
               platform="OpenSea"
               platformLink="https://opensea.io/collection/digital-woodworks"
@@ -37,16 +39,28 @@ function App() {
           />
 
           {/* Collection Component */}
-          <Collection
+          <CollectionB
               name="CryptoEmojis"
               platform="Crypto.com"
               platformLink="https://crypto.com/nft/collection/318ab765d9af6dfedd83fa5affa1d60a"
-              description="a collection of green cryptoEmojis (only available on crypto.com NFT) designed by shifting 13 types of hues, 
+              description="a collection of green CryptoEmojis (only available on crypto.com NFT) designed by shifting 13 types of hues, 
                            colors, and contrast with a supply of 1,000 NFTs."
               supply="1,000 NFTs to be minted."
               price="$14"
               imageA={image6}
               imageB={image8}
+          />
+
+          {/* Collection Component */}
+          <CollectionA
+              name="AstroEmojis"
+              platform="OpenSea"
+              platformLink="https://opensea.io/collection/astroemojis"
+              description="a collection of 1,000 lost Astro Emojis NFTs. "
+              supply="1,000 NFTs to be minted."
+              price="0.0045 ETH"
+              imageA={image9}
+              imageB={image10}
           />
 
           {/* Footer */}
@@ -132,7 +146,7 @@ function Header() {
                                 <img src={image2} className="img-thumbnail" alt="Los Angeles" />
                             </div>
                             <div className="col-6 col-sm-3 p-2">
-                                <img src={image3} className="img-thumbnail" alt="Los Angeles" />
+                                <img src={image10} className="img-thumbnail" alt="Los Angeles" />
                             </div>
                             <div className="col-6 col-sm-3 p-2">
                                 <img src={image4} className="img-thumbnail" alt="Los Angeles" />
@@ -161,13 +175,13 @@ function Header() {
                                 <img src={image3} className="img-thumbnail" alt="Los Angeles" />
                             </div>
                             <div className="col-6 col-sm-3 p-2">
-                                <img src={image7} className="img-thumbnail" alt="Los Angeles" />
+                                <img src={image10} className="img-thumbnail" alt="Los Angeles" />
                             </div>
                             <div className="col-6 col-sm-3 p-2">
                                 <img src={image4} className="img-thumbnail" alt="Los Angeles" />
                             </div>
                             <div className="col-6 col-sm-3 p-2">
-                                <img src={image8} className="img-thumbnail" alt="Los Angeles" />
+                                <img src={image9} className="img-thumbnail" alt="Los Angeles" />
                             </div>
                         </div>
                     </div>
@@ -184,7 +198,7 @@ function Header() {
 }
 
 // CollectionA Component
-function Collection(props) {
+function CollectionA(props) {
     // Important variables
     const { name, description, supply, price, platform, imageA, imageB, platformLink } = props;
 
@@ -268,6 +282,98 @@ function Collection(props) {
                         <div className="col-6 col-sm-6 p-2">
                             <img src={imageB} className="img-thumbnail" alt="Los Angeles" />
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        );
+}
+
+// CollectionB Component
+function CollectionB(props) {
+    // Important variables
+    const { name, description, supply, price, platform, imageA, imageB, platformLink } = props;
+
+    // Return UI
+    return (
+        <section className="container-fluid p-3 border-top">
+            <div className="row align-content-center justify-content-center">
+                <div className="col-lg-6 align-self-center px-lg-5 px-3 px-0 pt-5 w-100">
+                    <div className="row mx-auto">
+                        <div className="col-6 col-sm-6 p-2">
+                            <img src={imageA} className="img-thumbnail" alt="Los Angeles" />
+                        </div>
+                        <div className="col-6 col-sm-6 p-2">
+                            <img src={imageB} className="img-thumbnail" alt="Los Angeles" />
+                        </div>
+                    </div>
+                </div>
+                <div className="col-lg-6 align-self-center px-lg-5 px-4 pt-5 pb-lg-5 pb-3">
+                    <h3 className="text-capitalize mb-4" style={{ fontSize: "2rem" }}>
+                        <strong className="text-dark"> {name} </strong>
+                        <small>
+                            <a href={platformLink} rel="noopener noreferrer" target="_blank" style={{ fontSize: "15pt" }}>
+                                <span> {platform} </span>
+                                <i className="fas fa-external-link-alt"></i>
+                            </a>
+                        </small>
+                    </h3>
+                    <p className="mb-5" style={{ fontSize: "15pt" }}>
+                        <strong className="border-bottom border-dark"> { name } </strong>
+                        <span> is {description} </span>
+
+                    </p>
+                    <div id="accordion" style={{ fontSize: "15pt" }}>
+
+                        <div className="card border-dark mb-1">
+                            <div className="card-header alert-light">
+                                <a className="collapsed card-link alert-light" data-toggle="collapse" href="#collapseOne">
+                                    <div className="clearfix">
+                                        <span className="float-left">
+                                            <span> Maximum Supply </span>
+                                        </span>
+                                        <span className="float-right"> <i className="fas fa-sort"></i> </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="collapseOne" className="collapse" data-parent="#accordion">
+                                <div className="card-body">
+                                    <p> <strong> {name} </strong> has a maximum supply of { supply } </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card border-dark mb-1">
+                            <div className="card-header alert-light">
+                                <a className="collapsed card-link alert-light" data-toggle="collapse" href="#collapseTwo">
+                                    <div className="clearfix">
+                                        <span className="float-left">
+                                            <span> Floor Price </span>
+                                        </span>
+                                        <span className="float-right"> <i className="fas fa-sort"></i> </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="collapseTwo" className="collapse" data-parent="#accordion">
+                                <div className="card-body">
+                                    <p> <strong> {name} </strong> current floor price is {price}. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card border-danger mb-1">
+                            <div className="card-header alert-danger">
+                                <a className="collapsed card-link alert-danger" href={platformLink} rel="noopener noreferrer" target="_blank">
+                                    <div className="clearfix">
+                                        <span className="float-left">
+                                            <b> Get one on {platform} </b>
+                                        </span>
+                                        <span className="float-right"> <i className="fas fa-external-link-alt"></i> </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

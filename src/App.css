@@ -1,3 +1,7 @@
 img {
     height : 100%;
 }
+
+.carousel-control-next, .carousel-control-prev{
+    opacity: 0;
+}
