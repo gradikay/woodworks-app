@@ -31,8 +31,8 @@ function App() {
               platform="OpenSea"
               platformLink="https://opensea.io/collection/digital-woodworks"
               description="a collection of cryptoEmojis designed by shifting 13 types of hues, 
-                           colors, and contrast with a supply of 1,000 NFTs."
-              supply="1,000 NFTs to be minted."
+                           colors, and contrast with a supply of 500 NFTs."
+              supply="500 NFTs to be minted."
               price="0.01 ETH"
               imageA={image2}
               imageB={image1}
@@ -44,8 +44,8 @@ function App() {
               platform="Crypto.com"
               platformLink="https://crypto.com/nft/collection/318ab765d9af6dfedd83fa5affa1d60a"
               description="a collection of green CryptoEmojis (only available on crypto.com NFT) designed by shifting 13 types of hues, 
-                           colors, and contrast with a supply of 1,000 NFTs."
-              supply="1,000 NFTs to be minted."
+                           colors, and contrast with a supply of 500 NFTs."
+              supply="500 NFTs to be minted."
               price="$14"
               imageA={image6}
               imageB={image8}
@@ -56,8 +56,8 @@ function App() {
               name="AstroEmojis"
               platform="OpenSea"
               platformLink="https://opensea.io/collection/astroemojis"
-              description="a collection of 1,000 lost Astro Emojis NFTs. "
-              supply="1,000 NFTs to be minted."
+              description="a collection of 500 lost Astro Emojis NFTs. "
+              supply="500 NFTs to be minted."
               price="0.0045 ETH"
               imageA={image9}
               imageB={image10}
