@@ -106,7 +106,7 @@ function HeaderO() {
                     </div>
                 </div> 
                 <div className="col-md-5">
-                    <video className="border border-5 rounded border-white shadow" style={{ width: "100%" }} controls >
+                    <video className="border border-5 rounded border-white shadow" style={{ width: "100%" }} controls autoplay muted>
                         <source className="border" src={intro} type="video/mp4" />
                         <source className="border" src={intro} type="video/ogg" />
                             Your browser does not support the video tag.
