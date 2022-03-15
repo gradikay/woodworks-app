@@ -92,7 +92,7 @@ function HeaderO() {
                     </div>
                     <div>
                         <p className="text-warning" style={{ fontSize: "1.35rem" }}> <strong> A total of 1,000 unique NFTs from two collections </strong> </p>
-                        <p style={{ fontSize: "1.35rem" }}> All NFTs are unique and sculpted by shifting 13 types of hues, colors, and contrast to random levels to achive different designs </p>
+                        <p style={{ fontSize: "1.35rem" }}> All NFTs are unique and sculpted by shifting 13 types of hues, colors, and contrast at random levels to achive different designs </p>
                     </div>
                     <div className="mt-3 mb-5">
                         <a href="https://opensea.io/collection/digital-woodworks" className="btn btn-outline-light shadow me-3 mb-3">
