@@ -7,7 +7,7 @@ import image5 from './image5.webp';
 import image7 from './image7.webp';
 import image9 from './image9.webp';
 import image10 from './image10.webp';
-import intro from './images/anivid.MOV';
+import intro from './images/anivid.mp4';
 import backImage from './backback.jpg';
 
 // Main Application
