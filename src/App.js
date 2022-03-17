@@ -127,11 +127,11 @@ function HeaderG() {
                         <span className={``}>&#128163;</span>
                         <strong>BombEmojis</strong>
                     </h1>
-                    <a href="https://opensea.io/collection/digital-woodworks" className="btn btn-lg btn-dark mb-2">
+                    <a href="https://opensea.io/collection/bombemojis" className="btn btn-lg btn-dark mb-2">
                         <span className={``}> &#9973; </span>
                         <strong> OpenSea </strong>
                     </a>
-                    <p className="" style={{ fontSize: "1.35rem" }}> <strong> Unleash Inner Emotions with 500 handmade collectible NFTs</strong> </p>
+                    <p className="" style={{ fontSize: "1.35rem" }}> <strong>A collection of 500 Bomb-head Angel emojis symbolizing unleashed emotions </strong> </p>
                 </div>
                 <div className="col-md-11 mx-auto flex-wrap d-flex justify-content-center align-content-center text-center">
                     <section className="row mx-auto">
@@ -160,7 +160,7 @@ function HeaderE() {
                         <span className={``}> &#9973; </span>
                         <strong> OpenSea </strong>
                     </a>
-                    <p className="" style={{ fontSize: "1.35rem" }}> <strong> Regain Lost Emotions with 500 handmade collectible NFTs</strong> </p>
+                    <p className="" style={{ fontSize: "1.35rem" }}> <strong> A collection of 500 emoji astronauts symbolizing drifting emotions </strong> </p>
                 </div>
                 <div className="col-md-11 mx-auto flex-wrap d-flex justify-content-center align-content-center text-center">
                     <section className="row mx-auto">
