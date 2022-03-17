@@ -54,7 +54,7 @@ function TopNav() {
                     <ul className="navbar-nav">
                         <NavLink title={`Twitter`} logo={``} emoji="&#128036;" link={`https://twitter.com/heartister`} />
                         <NavLink title={`Instagram`} logo={``} emoji="&#128249;" link={`https://www.instagram.com/digital_woodworks/`} />
-                        <NavLink title={`Woodworks`} logo={``} emoji="&#128163;" link={`https://opensea.io/collection/digital-woodworks`} />
+                        <NavLink title={`Woodworks`} logo={``} emoji="&#128163;" link={`https://opensea.io/collection/bombemojis`} />
                         <NavLink title={`AstroEmojis`} logo={``} emoji="&#128640;" link={`https://opensea.io/collection/astroemojis`} />
                     </ul>
                 </div>
@@ -95,7 +95,7 @@ function HeaderO() {
                         <p style={{ fontSize: "1.35rem" }}> All NFTs are unique and sculpted by shifting 13 types of hues, colors, and contrast at random levels to achive different designs </p>
                     </div>
                     <div className="mt-3 mb-5">
-                        <a href="https://opensea.io/collection/digital-woodworks" className="btn btn-outline-light shadow me-3 mb-3">
+                        <a href="https://opensea.io/collection/bombemojis" className="btn btn-outline-light shadow me-3 mb-3">
                             <span className={``}> &#128163; </span>
                             <strong> BombEmojis </strong>
                         </a>
